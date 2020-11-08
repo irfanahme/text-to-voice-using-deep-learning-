@@ -1,0 +1,37 @@
+math_symbolss = (('=', 'equal'),
+('≠' , 'not equal'),
+('≈', 'approximately equal'),
+('#', 'number'),
+('>', "greater than"),
+('<', 'Less than'),
+('+', 'plus'),
+('-', 'minus'),
+('*' , 'multiple'),
+('×' , 'multiple'),
+('÷', 'division'),
+('/', 'division'),
+('^', 'power'),
+('%', 'percentage'),
+('°' , 'degree'),
+('π', 'pi'),
+('∞', 'infinity'),
+('∑', 'sigma'),
+('∩' , 'intersection'),
+('∪', 'union'),
+('&', 'and'),
+('∨', 'or'),
+('℃', 'Degree Celsius'),
+('℉', '	Degree Fahrenheit'),
+('α', 'Alpha'),
+('β', 'Beta'),
+('γ', 'Gamma'),
+('δ', 'Delta'),
+('ε', 'Epsilon'),
+('θ', 'Theta'),
+('λ', 'Lambda'),
+('μ', 'Mu'))
+
+def math_symbols_to_text(text):
+    for i,a in math_symbolss:
+        text = text.replace(i, a)
+    return text
